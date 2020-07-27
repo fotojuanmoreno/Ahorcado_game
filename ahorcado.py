@@ -95,6 +95,13 @@ def recoge_letra():
 	print("\n" + palabra_visual + "\n")
 
 def eljuego():
+	global la_palabra
+	global palabra_visual
+	global letras
+	global contador
+	global letras_escogidas
+	global errores
+
 	print(muerto.error_inicio + "\n")
 	#print("##############\n")
 	print("Aquí esta tu palabra a resolver: \n")
@@ -112,7 +119,6 @@ def eljuego():
 	if repetir == "n":
 		print("Hasta la próxima. ¿Debería de poner un contador?")
 	else:
-		la_palabra = ""
 		la_palabra = ""
 		palabra_visual = ""
 		contador = 0
